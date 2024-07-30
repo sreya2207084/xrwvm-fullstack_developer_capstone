@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Apex Motors</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <!-- Header Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contact Information -->
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p><strong>Address:</strong> 1234 Car Dealership Blvd, Auto City, AC 12345</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@apexmotors.com</p>
+            <p><strong>Hours:</strong> Mon-Fri: 9 AM - 6 PM | Sat: 10 AM - 4 PM | Sun: Closed</p>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Apex Motors. All rights reserved.</p>
+    </footer>
+</body>
+</html>
